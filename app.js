@@ -32,6 +32,8 @@ app.get("/", function(req, res){
         case 6:
         day = "Saturday";
         break;
+        default:
+        console.log("error current day is equal to: " + currentDay);
     }
 
     res.render("list", {kindofDay: day})
